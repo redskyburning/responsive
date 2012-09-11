@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content_header %}
+    <header id="content-header">
+        <h1>Image Gallery Title</h1>
+    </header>
+{% endblock %}
+
+{% block content_main %}
+    
+    <ul id="gallery-images">
+        {% include 'gallery-image-fragment.html' %}
+        {% include 'gallery-image-fragment.html' %}
+        {% include 'gallery-image-fragment.html' %}
+    </ul>
+    
+    <nav id="gallery-nav">
+        <ul>
+            {% include 'gallery-nav-fragment.html' %}
+            {% include 'gallery-nav-fragment.html' %}
+            {% include 'gallery-nav-fragment.html' %}
+        </ul>
+    </nav>
+    
+{% endblock %}
