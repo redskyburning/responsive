@@ -7,3 +7,115 @@
 2012-09-10 17:54:27 overwrite css/main.css 
 2012-09-10 18:00:09 overwrite css/main.css 
 2012-09-10 18:00:59 overwrite css/main.css 
+2012-09-10 21:06:57    create css/functions.css 
+2012-09-10 21:15:40     error scss/content-area.scss (Line 2: Undefined variable: "$fs-h1".)
+2012-09-10 21:15:40    create css/content-area.css 
+2012-09-10 21:17:55     error scss/content-area.scss (Line 2: Undefined variable: "$content-h1".)
+2012-09-10 21:17:55 overwrite css/content-area.css 
+2012-09-10 21:20:42     error scss/content-text.scss (Line 2: Undefined variable: "$content-h1".)
+2012-09-10 21:20:42    create css/content-text.css 
+2012-09-10 21:20:52     error scss/content-base.scss (Line 10: Undefined variable: "$golden".)
+2012-09-10 21:20:52    create css/content-base.css 
+2012-09-10 21:22:43     error scss/content-base.scss (Line 10: Undefined variable: "$golden".)
+2012-09-10 21:22:43 overwrite css/content-base.css 
+2012-09-10 21:23:04     error scss/main.scss (Line 6: Invalid CSS after "@import": expected file to import (string or url()), was ": 'functions.sc...")
+2012-09-10 21:23:04 overwrite css/main.css 
+2012-09-10 21:24:19     error scss/main.scss (Line 6: Invalid CSS after "@import": expected file to import (string or url()), was ": 'functions.sc...")
+2012-09-10 21:24:19 identical css/main.css 
+2012-09-10 21:25:15 overwrite css/base.css 
+2012-09-10 21:25:15     error scss/main.scss (Line 6: Invalid CSS after "@import": expected file to import (string or url()), was ": 'functions.sc...")
+2012-09-10 21:25:15 identical css/main.css 
+2012-09-10 21:28:37     error scss/content-base.scss (Line 10: Undefined variable: "$golden".)
+2012-09-10 21:28:37 identical css/content-base.css 
+2012-09-10 21:28:37     error scss/main.scss (Line 6: Invalid CSS after "@import": expected file to import (string or url()), was ": 'functions.sc...")
+2012-09-10 21:28:37 identical css/main.css 
+2012-09-10 21:34:58     error scss/content-text.scss (Line 4: Undefined variable: "$content-h1".)
+2012-09-10 21:34:58 overwrite css/content-text.css 
+2012-09-10 21:34:58     error scss/main.scss (Line 6: Invalid CSS after "@import": expected file to import (string or url()), was ": 'functions.sc...")
+2012-09-10 21:34:58 identical css/main.css 
+2012-09-10 21:37:23     error scss/main.scss (Line 6: Invalid CSS after "@import": expected file to import (string or url()), was ": 'functions.sc...")
+2012-09-10 21:37:23 identical css/main.css 
+2012-09-10 21:38:30 overwrite css/main.css 
+2012-09-10 21:40:19     error scss/content-base.scss (Line 8: Undefined variable: "$golden".)
+2012-09-10 21:40:19 overwrite css/content-base.css 
+2012-09-10 21:40:19 overwrite css/main.css 
+2012-09-10 21:41:25 overwrite css/main.css 
+2012-09-10 21:47:21 overwrite css/main.css 
+2012-09-10 21:48:39 overwrite css/main.css 
+2012-09-10 21:48:57 overwrite css/main.css 
+2012-09-10 21:49:55 overwrite css/main.css 
+2012-09-10 21:50:25 overwrite css/main.css 
+2012-09-10 21:51:13 overwrite css/main.css 
+2012-09-10 22:03:25 overwrite css/main.css 
+2012-09-10 22:04:49 overwrite css/main.css 
+2012-09-10 22:05:51 overwrite css/main.css 
+2012-09-10 22:06:06 overwrite css/main.css 
+2012-09-10 22:07:19 overwrite css/main.css 
+2012-09-10 22:09:46     error scss/content-base.scss (Line 8: Undefined variable: "$golden".)
+2012-09-10 22:09:46 identical css/content-base.css 
+2012-09-10 22:09:46 overwrite css/main.css 
+2012-09-10 22:10:51 overwrite css/main.css 
+2012-09-10 22:11:21 overwrite css/main.css 
+2012-09-10 22:11:35     error scss/content-base.scss (Line 8: Undefined variable: "$golden".)
+2012-09-10 22:11:35 identical css/content-base.css 
+2012-09-10 22:11:36 overwrite css/main.css 
+2012-09-10 22:11:56     error scss/content-base.scss (Line 8: Undefined variable: "$golden".)
+2012-09-10 22:11:56 identical css/content-base.css 
+2012-09-10 22:11:57 overwrite css/main.css 
+2012-09-10 22:12:38     error scss/content-base.scss (Line 8: Undefined variable: "$golden".)
+2012-09-10 22:12:38 identical css/content-base.css 
+2012-09-10 22:12:39 overwrite css/main.css 
+2012-09-10 22:13:17 overwrite css/content-base.css 
+2012-09-10 22:13:18 overwrite css/main.css 
+2012-09-10 22:14:10     error scss/content-base.scss (Line 26: Undefined variable: "$content-pad".)
+2012-09-10 22:14:10 overwrite css/content-base.css 
+2012-09-10 22:14:10 overwrite css/main.css 
+2012-09-10 22:14:20 overwrite css/content-base.css 
+2012-09-10 22:14:21 overwrite css/main.css 
+2012-09-10 22:14:29     error scss/content-text.scss (Line 4: Undefined variable: "$content-h1".)
+2012-09-10 22:14:29 identical css/content-text.css 
+2012-09-10 22:14:30 overwrite css/main.css 
+2012-09-10 22:16:22     error scss/content-text.scss (Line 4: Undefined variable: "$content-h1".)
+2012-09-10 22:16:22 identical css/content-text.css 
+2012-09-10 22:16:22 overwrite css/main.css 
+2012-09-10 22:16:52 overwrite css/main.css 
+2012-09-10 22:17:01 overwrite css/main.css 
+2012-09-10 22:17:15 overwrite css/main.css 
+2012-09-10 22:19:57 overwrite css/main.css 
+2012-09-10 22:22:28     error scss/main.scss (Line 86: Undefined variable: "$header-min".)
+2012-09-10 22:22:28 overwrite css/main.css 
+2012-09-10 22:24:27     error scss/main.scss (Line 86: Undefined variable: "$header-min".)
+2012-09-10 22:24:27 identical css/main.css 
+2012-09-10 22:24:46 overwrite css/main.css 
+2012-09-10 22:26:24 overwrite css/main.css 
+2012-09-10 22:32:42 overwrite css/main.css 
+2012-09-10 22:34:37 overwrite css/main.css 
+2012-09-10 22:34:55 overwrite css/main.css 
+2012-09-10 22:40:36 overwrite css/main.css 
+2012-09-10 22:41:58 overwrite css/main.css 
+2012-09-10 22:44:22 overwrite css/main.css 
+2012-09-10 22:46:10 overwrite css/main.css 
+2012-09-10 22:48:34 overwrite css/main.css 
+2012-09-10 22:48:52 overwrite css/main.css 
+2012-09-10 22:49:57 overwrite css/main.css 
+2012-09-10 22:52:31 overwrite css/main.css 
+2012-09-10 22:52:52 overwrite css/main.css 
+2012-09-10 22:53:19 overwrite css/main.css 
+2012-09-10 22:53:58 overwrite css/main.css 
+2012-09-10 22:57:07 overwrite css/main.css 
+2012-09-10 22:57:39 overwrite css/main.css 
+2012-09-10 22:58:16 overwrite css/main.css 
+2012-09-10 22:59:06 overwrite css/main.css 
+2012-09-10 22:59:31 overwrite css/main.css 
+2012-09-10 22:59:40 overwrite css/main.css 
+2012-09-10 23:01:45 overwrite css/main.css 
+2012-09-10 23:03:13 overwrite css/main.css 
+2012-09-10 23:05:40 overwrite css/main.css 
+2012-09-10 23:07:09 overwrite css/main.css 
+2012-09-10 23:08:28 overwrite css/main.css 
+2012-09-10 23:08:57 overwrite css/main.css 
+2012-09-10 23:09:33 overwrite css/main.css 
+2012-09-10 23:12:21 overwrite css/main.css 
+2012-09-10 23:13:45 overwrite css/main.css 
+2012-09-10 23:14:37 overwrite css/main.css 
+2012-09-10 23:15:21 overwrite css/main.css 

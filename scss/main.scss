@@ -3,6 +3,8 @@
 @import 'normalize.scss';
 @import 'base.scss';
 
+@import 'functions.scss';
+
 /*************************
     Helpers
 *************************/
@@ -12,5 +14,137 @@
 }
 
 /*************************
-    Main
+    VMin
 *************************/
+
+html {
+	font-size:1vm;
+	font-size:1vmin;
+}
+
+/*************************
+    Variables
+*************************/
+
+$base-pad:2;
+$base-bottom:$base-pad;
+
+$header-min:10;
+$header-pad:$base-pad;
+$header-offset:$base-pad;
+$header-bottom:$base-bottom;
+$header-total:$header-pad * 2 + $header-min + $header-offset;
+
+$content-pad:$base-pad;
+$content-bottom:$base-bottom;
+
+$sb-pad:$base-pad;
+$sb-bottom:$base-bottom;
+
+$footer-pad:$base-pad;
+
+$golden:1.6;
+
+/*************************
+    Text
+*************************/
+
+@import 'content-base.scss';
+
+$content-h1:4;
+$content-h2:3;
+$content-h3:2.5;
+$content-p:3;
+$content-bottom:2;
+
+@media (orientation:portrait) and (max-width:475px), (orientation:landscape) and (max-height:475px)  {
+    @import 'content-text.scss';
+}
+
+@media (orientation:portrait) and (min-width:476px) and (max-width:600px), (orientation:landscape) and (min-height:476px) and (max-width:600px)  {
+    @import 'content-text.scss';
+}
+
+$content-h1:3;
+$content-h2:2.5;
+$content-h3:$content-h2;
+$content-p:1.75;
+$content-bottom:2;
+
+@media (orientation:portrait) and (min-width:601px), (orientation:landscape) and (min-height:601px) {
+    @import 'content-text.scss';
+}
+
+/*************************
+    Header
+*************************/
+
+#site-header {
+}
+    
+    #site-header hgroup {
+    
+        background:#999;
+        padding:em($header-pad);
+        position:fixed;
+        z-index:100;
+        
+        .nav-button {
+            background:#555;
+        }
+    
+        @media (orientation:portrait) {
+            height:em($header-min);
+            width:100%;
+            
+            .nav-button {
+                display:inline-block;
+                margin-right:em($header-bottom);
+            }
+            
+            img {
+                width:auto;
+                height:100%;
+            }
+        }
+        
+        @media (orientation:landscape) {
+            width:em($header-min);
+            height:100%;
+            
+            .nav-button {
+                margin-bottom:em($header-bottom);
+            }
+            
+            img {
+                width:100%;
+                height:auto;
+            }
+        }
+    }
+    
+    #site-nav {
+        position:fixed;
+        z-index:90;
+        width:100%;
+        height:100%;
+        background:#666;
+        padding:em($content-pad);
+        display:none;
+        
+        .active {
+            display:block;
+        }
+    }
+
+#site-nav, #content-wrap, #site-footer {
+    
+    @media (orientation:portrait) {
+        padding-top:em($header-total);
+    }
+    
+    @media (orientation:landscape) {
+        padding-left:em($header-total);
+    }
+    
+}

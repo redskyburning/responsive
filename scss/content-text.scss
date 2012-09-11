@@ -1,0 +1,25 @@
+
+
+h1, .h1 {
+    font-size:em($content-h1);
+    margin-bottom:em(vm($content-bottom,$content-h1)); 
+}
+
+h2, .h2 {
+    font-size:em($content-h2);
+    margin-bottom:em(vm($content-bottom,$content-h2)); 
+}
+
+h3, .h3 { 
+    font-size:em($content-h3);
+    margin-bottom:em(vm($content-bottom,$content-h3)); 
+}
+
+h5, h6, p, blockquote, figcaption {
+    font-size:em($content-p);
+    margin-bottom:em(vm($content-bottom,$content-p)); 
+}
+
+blockquote, figcaption {
+    padding:em($content-pad);
+}

@@ -1,0 +1,31 @@
+html {
+	font-family: 'Lato', sans-serif;
+	font-weight:400;
+	color:#333;
+}
+
+h1, h2, h3, h4, h5, h6, p, figcaption, blockquote {
+	line-height:1.6em;
+}
+
+p, figcaption, blockquote {
+    text-align:justify;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	text-transform:capitalize;
+	font-family: 'Oswald', sans-serif;
+	font-weight:300;
+}
+
+h1, h2, h4, .h1, .h2, .h4 {
+	font-weight:400;
+}
+
+blockquote {
+	background-color:#999;
+}
+
+figcaption {
+	background-color:#bbb;
+}
