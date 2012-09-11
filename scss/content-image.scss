@@ -1,0 +1,25 @@
+/*************************
+    Images, Heros
+*************************/
+
+.stream-image, .content-image {
+	background-color:#999;
+	float:left;
+	margin-right:em($content-pad);
+	
+	@media (orientation:landscape) and (min-width:900px), (orientation:portrait) and (min-width:900px) {
+	}
+}
+
+.content-image {
+	width:em($content-img-w);
+}
+
+.content-image.hero {
+	width:em($content-hero-w * 1.3);
+}
+
+.stream-image {
+	width:em($stream-img-w);
+	margin-bottom:em($content-pad);
+}

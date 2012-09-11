@@ -109,8 +109,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /* line 108, ../scss/base.scss */
-figcaption, blockquote {
+figcaption, blockquote, header, footer {
   margin: 0px;
+  padding: 0px;
 }
 
 /* ==========================================================================
@@ -119,7 +120,7 @@ figcaption, blockquote {
 /*
  * Image replacement
  */
-/* line 134, ../scss/base.scss */
+/* line 135, ../scss/base.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -128,7 +129,7 @@ figcaption, blockquote {
   *text-indent: -9999px;
 }
 
-/* line 142, ../scss/base.scss */
+/* line 143, ../scss/base.scss */
 .ir:before {
   content: "";
   display: block;
@@ -139,7 +140,7 @@ figcaption, blockquote {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 153, ../scss/base.scss */
+/* line 154, ../scss/base.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -148,7 +149,7 @@ figcaption, blockquote {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 162, ../scss/base.scss */
+/* line 163, ../scss/base.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -164,7 +165,7 @@ figcaption, blockquote {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 179, ../scss/base.scss */
+/* line 180, ../scss/base.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -178,7 +179,7 @@ figcaption, blockquote {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 192, ../scss/base.scss */
+/* line 193, ../scss/base.scss */
 .invisible {
   visibility: hidden;
 }
@@ -194,7 +195,7 @@ figcaption, blockquote {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 209, ../scss/base.scss */
+/* line 210, ../scss/base.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -203,7 +204,7 @@ figcaption, blockquote {
   /* 2 */
 }
 
-/* line 214, ../scss/base.scss */
+/* line 215, ../scss/base.scss */
 .clearfix:after {
   clear: both;
 }
@@ -212,7 +213,7 @@ figcaption, blockquote {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 223, ../scss/base.scss */
+/* line 224, ../scss/base.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -233,7 +234,7 @@ figcaption, blockquote {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 248, ../scss/base.scss */
+  /* line 249, ../scss/base.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -242,18 +243,18 @@ figcaption, blockquote {
     text-shadow: none !important;
   }
 
-  /* line 256, ../scss/base.scss */
+  /* line 257, ../scss/base.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 260, ../scss/base.scss */
+  /* line 261, ../scss/base.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 264, ../scss/base.scss */
+  /* line 265, ../scss/base.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -261,33 +262,33 @@ figcaption, blockquote {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 274, ../scss/base.scss */
+  /* line 275, ../scss/base.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 279, ../scss/base.scss */
+  /* line 280, ../scss/base.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 284, ../scss/base.scss */
+  /* line 285, ../scss/base.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 289, ../scss/base.scss */
+  /* line 290, ../scss/base.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 293, ../scss/base.scss */
+  /* line 294, ../scss/base.scss */
   img {
     max-width: 100% !important;
   }
@@ -296,7 +297,7 @@ figcaption, blockquote {
     margin: 0.5cm;
 }
 
-  /* line 303, ../scss/base.scss */
+  /* line 304, ../scss/base.scss */
   p,
   h2,
   h3 {
@@ -304,7 +305,7 @@ figcaption, blockquote {
     widows: 3;
   }
 
-  /* line 309, ../scss/base.scss */
+  /* line 310, ../scss/base.scss */
   h2,
   h3 {
     page-break-after: avoid;
