@@ -83,9 +83,9 @@ $content-h3:2.5;
 $content-p:2.25;
 $content-bottom:2;
 
-$stream-img-w:35;
-$content-img-w:40;
-$content-hero-w:$content-img-w;
+$stream-img-w:30;
+$content-img-w:35;
+$content-hero-w:50;
 
 @media (orientation:portrait) and (max-width:475px), (orientation:landscape) and (max-height:475px)  {
     @import 'content-text.scss';
@@ -100,6 +100,11 @@ $content-hero-w:$content-img-w;
 @media (orientation:portrait) and (min-width:476px) and (max-width:600px), (orientation:landscape) and (min-height:476px) and (max-height:600px)  {
     @import 'content-text.scss';
     @import 'content-image.scss';
+	
+	.content-image.hero {
+		width:em($content-hero-w);
+		height:em($content-hero-w);
+	}
 }
 
 $content-h1:3;
@@ -111,6 +116,16 @@ $content-bottom:2;
 @media (orientation:portrait) and (min-width:601px), (orientation:landscape) and (min-height:601px) {
     @import 'content-text.scss';
     @import 'content-image.scss';
+	
+	.content-image.hero {
+		width:em($content-hero-w);
+		height:em($content-hero-w);
+	}
+	
+	.stream-image img {
+		width:em($stream-img-w);
+		height:em($stream-img-w * 1);
+	}
 }
 
 /*************************

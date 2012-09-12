@@ -5,10 +5,9 @@
 .stream-image, .content-image {
 	background-color:#999;
 	float:left;
+	clear:both;
 	margin-right:em($content-pad);
-	
-	@media (orientation:landscape) and (min-width:900px), (orientation:portrait) and (min-width:900px) {
-	}
+	/* margin-bottom:em($content-pad); */
 }
 
 .content-image {
@@ -16,7 +15,7 @@
 }
 
 .content-image.hero {
-	width:em($content-hero-w * 1.3);
+	width:em($content-hero-w);
 }
 
 .stream-image {
