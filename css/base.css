@@ -114,13 +114,25 @@ figcaption, blockquote, header, footer {
   padding: 0px;
 }
 
+/* line 113, ../scss/base.scss */
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 119, ../scss/base.scss */
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0px;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 /*
  * Image replacement
  */
-/* line 135, ../scss/base.scss */
+/* line 142, ../scss/base.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -129,7 +141,7 @@ figcaption, blockquote, header, footer {
   *text-indent: -9999px;
 }
 
-/* line 143, ../scss/base.scss */
+/* line 150, ../scss/base.scss */
 .ir:before {
   content: "";
   display: block;
@@ -140,7 +152,7 @@ figcaption, blockquote, header, footer {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 154, ../scss/base.scss */
+/* line 161, ../scss/base.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -149,7 +161,7 @@ figcaption, blockquote, header, footer {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 163, ../scss/base.scss */
+/* line 170, ../scss/base.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -165,7 +177,7 @@ figcaption, blockquote, header, footer {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 180, ../scss/base.scss */
+/* line 187, ../scss/base.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -179,7 +191,7 @@ figcaption, blockquote, header, footer {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 193, ../scss/base.scss */
+/* line 200, ../scss/base.scss */
 .invisible {
   visibility: hidden;
 }
@@ -195,7 +207,7 @@ figcaption, blockquote, header, footer {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 210, ../scss/base.scss */
+/* line 217, ../scss/base.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -204,7 +216,7 @@ figcaption, blockquote, header, footer {
   /* 2 */
 }
 
-/* line 215, ../scss/base.scss */
+/* line 222, ../scss/base.scss */
 .clearfix:after {
   clear: both;
 }
@@ -213,7 +225,7 @@ figcaption, blockquote, header, footer {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 224, ../scss/base.scss */
+/* line 231, ../scss/base.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -234,7 +246,7 @@ figcaption, blockquote, header, footer {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 249, ../scss/base.scss */
+  /* line 256, ../scss/base.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -243,18 +255,18 @@ figcaption, blockquote, header, footer {
     text-shadow: none !important;
   }
 
-  /* line 257, ../scss/base.scss */
+  /* line 264, ../scss/base.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 261, ../scss/base.scss */
+  /* line 268, ../scss/base.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 265, ../scss/base.scss */
+  /* line 272, ../scss/base.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -262,33 +274,33 @@ figcaption, blockquote, header, footer {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 275, ../scss/base.scss */
+  /* line 282, ../scss/base.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 280, ../scss/base.scss */
+  /* line 287, ../scss/base.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 285, ../scss/base.scss */
+  /* line 292, ../scss/base.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 290, ../scss/base.scss */
+  /* line 297, ../scss/base.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 294, ../scss/base.scss */
+  /* line 301, ../scss/base.scss */
   img {
     max-width: 100% !important;
   }
@@ -297,7 +309,7 @@ figcaption, blockquote, header, footer {
     margin: 0.5cm;
 }
 
-  /* line 304, ../scss/base.scss */
+  /* line 311, ../scss/base.scss */
   p,
   h2,
   h3 {
@@ -305,7 +317,7 @@ figcaption, blockquote, header, footer {
     widows: 3;
   }
 
-  /* line 310, ../scss/base.scss */
+  /* line 317, ../scss/base.scss */
   h2,
   h3 {
     page-break-after: avoid;

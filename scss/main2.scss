@@ -1,0 +1,109 @@
+@import 'compass/css3';
+
+@import 'normalize.scss';
+@import 'base.scss';
+
+$header-vm:10vmin;
+$header-pad:1.2vmin;
+$header-mar:$header-pad;
+
+$content-pad:2vmin;
+
+.aspect {
+	width:100%;
+	height:auto;
+}
+
+html, body {
+	width:100%;
+	height:100%;
+}
+
+body {
+
+}
+
+#site-header, .nav-section {
+	position:fixed;
+}
+
+#site-header {
+	@include display-box;
+	@include box-orient(vertical);
+	@include box-pack(justify);
+	
+	background:#777;
+	z-index:150;
+	padding:$header-pad;
+	@include box-sizing(border-box);
+	
+	@media (orientation:portrait) {
+		height:$header-vm;
+		width:100%;
+	}
+	
+	@media (orientation:landscape) {
+		width:$header-vm;
+		height:100%;
+	}
+}
+
+#sh-logo, #sh-toggles li {
+	background:#999;
+	cursor:pointer;
+}
+
+#sh-logo {
+	margin-bottom:$header-mar;
+}
+
+#sh-toggles li {
+
+	margin-top:$header-mar;
+}
+
+.nav-section {
+	z-index:100;
+	width:100%;
+	height:100%;
+	background:#555;
+	display:none;
+	@include box-sizing(border-box);
+	
+	@media (orientation:portrait) {
+		padding-top:$header-vm;
+		
+	}
+	
+	@media (orientation:landscape) {
+		padding-left:$header-vm;
+	}
+}
+
+.nav-section.active {
+	display:block;
+}
+
+.nav-content {
+	padding:$content-pad;
+	overflow-x:none;
+	
+	ul {
+		
+		li {
+			width:33%;
+			display:inline-block;
+			padding-right:$content-pad;
+			margin-bottom:$content-pad;
+			@include box-sizing(border-box);
+			
+			figure {
+				background:#999;
+				width:35%;
+				float:left;
+				margin-right:$content-pad;
+			}
+		}
+	}
+}
+

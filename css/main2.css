@@ -850,512 +850,123 @@ h1, h2, h3, h4, h5, h6, p {
     page-break-after: avoid;
   }
 }
-/*************************
-    Helpers
-*************************/
-/* line 13, ../scss/main.scss */
-.semantic-title {
-  display: none;
-}
-
-/* line 17, ../scss/main.scss */
-#viewportWatch {
-  color: #fff;
-  padding: .5em;
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  background-color: rgba(0, 0, 0, 0.4);
-  opacity: 0.3;
-  z-index: 1000;
-  font-size: 3em;
-}
-
-/* line 29, ../scss/main.scss */
-.aspect-img {
+/* line 12, ../scss/main2.scss */
+.aspect {
   width: 100%;
   height: auto;
 }
 
-/*************************
-    VMin
-*************************/
-/* line 38, ../scss/main.scss */
-html {
-  font-size: 1vm;
-  font-size: 1vmin;
+/* line 17, ../scss/main2.scss */
+html, body {
+  width: 100%;
+  height: 100%;
 }
 
-/* line 43, ../scss/main.scss */
-body {
-  background: #eee;
-}
-
-/*************************
-    Variables
-*************************/
-/*************************
-    Text
-*************************/
-/* line 1, ../scss/content-base.scss */
-html {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  color: #333;
-}
-
-/* line 7, ../scss/content-base.scss */
-h1, h2, h3, h4, h5, h6, p, figcaption, blockquote {
-  line-height: 1.6em;
-  margin: 0px;
-}
-
-/* line 12, ../scss/content-base.scss */
-p, figcaption, blockquote {
-  text-align: justify;
-}
-
-/* line 16, ../scss/content-base.scss */
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  text-transform: capitalize;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 300;
-  text-align: justify;
-}
-/* line 22, ../scss/content-base.scss */
-h1 a, h1 a:hover, h1 a:visited, h1 a:active, h2 a, h2 a:hover, h2 a:visited, h2 a:active, h3 a, h3 a:hover, h3 a:visited, h3 a:active, h4 a, h4 a:hover, h4 a:visited, h4 a:active, h5 a, h5 a:hover, h5 a:visited, h5 a:active, h6 a, h6 a:hover, h6 a:visited, h6 a:active, .h1 a, .h1 a:hover, .h1 a:visited, .h1 a:active, .h2 a, .h2 a:hover, .h2 a:visited, .h2 a:active, .h3 a, .h3 a:hover, .h3 a:visited, .h3 a:active, .h4 a, .h4 a:hover, .h4 a:visited, .h4 a:active, .h5 a, .h5 a:hover, .h5 a:visited, .h5 a:active, .h6 a, .h6 a:hover, .h6 a:visited, .h6 a:active {
-  font-weight: inherit;
-}
-
-/* line 27, ../scss/content-base.scss */
-h1, h2, h4, .h1, .h2, .h4 {
-  font-weight: 400;
-}
-
-/* line 31, ../scss/content-base.scss */
-blockquote {
-  background-color: #999;
-  clear: both;
-}
-
-/* line 36, ../scss/content-base.scss */
-figcaption {
-  background-color: #bbb;
-}
-
-/* line 40, ../scss/content-base.scss */
-a, a:hover, a:visited, a:active {
-  color: inherit;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-@media (orientation: portrait) and (max-width: 475px), (orientation: landscape) and (max-height: 475px) {
-  /* line 3, ../scss/content-text.scss */
-  h1, .h1 {
-    font-size: 3.5em;
-    margin-bottom: 0.4em;
-  }
-
-  /* line 8, ../scss/content-text.scss */
-  h2, .h2 {
-    font-size: 3em;
-    margin-bottom: 0.46667em;
-  }
-
-  /* line 13, ../scss/content-text.scss */
-  h3, .h3 {
-    font-size: 2.5em;
-    margin-bottom: 0.56em;
-  }
-
-  /* line 18, ../scss/content-text.scss */
-  h5, h6, p, blockquote {
-    font-size: 2.25em;
-    margin-bottom: 0.62222em;
-  }
-
-  /* line 23, ../scss/content-text.scss */
-  blockquote, figcaption {
-    padding: 0.88889em;
-  }
-
-  /* line 27, ../scss/content-text.scss */
-  figcaption {
-    font-size: 2.25em;
-  }
-
-  /*************************
-      Images, Heros
-  *************************/
-  /* line 5, ../scss/content-image.scss */
-  .stream-image, .content-image {
-    background-color: #999;
-    float: left;
-    clear: both;
-    margin-right: 2em;
-    /* margin-bottom:em($content-pad); */
-  }
-
-  /* line 13, ../scss/content-image.scss */
-  .content-image {
-    width: 35em;
-  }
-
-  /* line 17, ../scss/content-image.scss */
-  .content-image.hero {
-    width: 50em;
-  }
-
-  /* line 21, ../scss/content-image.scss */
-  .stream-image {
-    width: 30em;
-    margin-bottom: 2em;
-  }
-
-  /* line 94, ../scss/main.scss */
-  .content-image.hero {
-    width: 100%;
-    float: none;
-  }
-}
-@media (orientation: portrait) and (min-width: 476px) and (max-width: 600px), (orientation: landscape) and (min-height: 476px) and (max-height: 600px) {
-  /* line 3, ../scss/content-text.scss */
-  h1, .h1 {
-    font-size: 3.5em;
-    margin-bottom: 0.4em;
-  }
-
-  /* line 8, ../scss/content-text.scss */
-  h2, .h2 {
-    font-size: 3em;
-    margin-bottom: 0.46667em;
-  }
-
-  /* line 13, ../scss/content-text.scss */
-  h3, .h3 {
-    font-size: 2.5em;
-    margin-bottom: 0.56em;
-  }
-
-  /* line 18, ../scss/content-text.scss */
-  h5, h6, p, blockquote {
-    font-size: 2.25em;
-    margin-bottom: 0.62222em;
-  }
-
-  /* line 23, ../scss/content-text.scss */
-  blockquote, figcaption {
-    padding: 0.88889em;
-  }
-
-  /* line 27, ../scss/content-text.scss */
-  figcaption {
-    font-size: 2.25em;
-  }
-
-  /*************************
-      Images, Heros
-  *************************/
-  /* line 5, ../scss/content-image.scss */
-  .stream-image, .content-image {
-    background-color: #999;
-    float: left;
-    clear: both;
-    margin-right: 2em;
-    /* margin-bottom:em($content-pad); */
-  }
-
-  /* line 13, ../scss/content-image.scss */
-  .content-image {
-    width: 35em;
-  }
-
-  /* line 17, ../scss/content-image.scss */
-  .content-image.hero {
-    width: 50em;
-  }
-
-  /* line 21, ../scss/content-image.scss */
-  .stream-image {
-    width: 30em;
-    margin-bottom: 2em;
-  }
-
-  /* line 104, ../scss/main.scss */
-  .content-image.hero {
-    width: 50em;
-    height: 50em;
-  }
-}
-@media (orientation: portrait) and (min-width: 601px), (orientation: landscape) and (min-height: 601px) {
-  /* line 3, ../scss/content-text.scss */
-  h1, .h1 {
-    font-size: 3em;
-    margin-bottom: 0.46667em;
-  }
-
-  /* line 8, ../scss/content-text.scss */
-  h2, .h2 {
-    font-size: 2.5em;
-    margin-bottom: 0.56em;
-  }
-
-  /* line 13, ../scss/content-text.scss */
-  h3, .h3 {
-    font-size: 2.5em;
-    margin-bottom: 0.56em;
-  }
-
-  /* line 18, ../scss/content-text.scss */
-  h5, h6, p, blockquote {
-    font-size: 1.75em;
-    margin-bottom: 0.8em;
-  }
-
-  /* line 23, ../scss/content-text.scss */
-  blockquote, figcaption {
-    padding: 1.14286em;
-  }
-
-  /* line 27, ../scss/content-text.scss */
-  figcaption {
-    font-size: 1.75em;
-  }
-
-  /*************************
-      Images, Heros
-  *************************/
-  /* line 5, ../scss/content-image.scss */
-  .stream-image, .content-image {
-    background-color: #999;
-    float: left;
-    clear: both;
-    margin-right: 2em;
-    /* margin-bottom:em($content-pad); */
-  }
-
-  /* line 13, ../scss/content-image.scss */
-  .content-image {
-    width: 35em;
-  }
-
-  /* line 17, ../scss/content-image.scss */
-  .content-image.hero {
-    width: 50em;
-  }
-
-  /* line 21, ../scss/content-image.scss */
-  .stream-image {
-    width: 30em;
-    margin-bottom: 2em;
-  }
-
-  /* line 120, ../scss/main.scss */
-  .content-image.hero {
-    width: 50em;
-    height: 50em;
-  }
-
-  /* line 125, ../scss/main.scss */
-  .stream-image img {
-    width: 30em;
-    height: 30em;
-  }
-}
-/*************************
-    Header
-*************************/
-/* line 138, ../scss/main.scss */
-#site-id {
-  background: #999;
-  padding: 2em;
+/* line 26, ../scss/main2.scss */
+#site-header, .nav-section {
   position: fixed;
-  z-index: 100;
 }
-/* line 145, ../scss/main.scss */
-#site-id .nav-button {
-  background: #555;
+
+/* line 30, ../scss/main2.scss */
+#site-header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-box-pack: justify;
+  box-pack: justify;
+  background: #777;
+  z-index: 150;
+  padding: 1.2vmin;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 @media (orientation: portrait) {
-  /* line 138, ../scss/main.scss */
-  #site-id {
-    height: 8em;
+  /* line 30, ../scss/main2.scss */
+  #site-header {
+    height: 10vmin;
     width: 100%;
-    box-shadow: 0px 0.5em 1em rgba(0, 0, 0, 0.4);
-  }
-  /* line 154, ../scss/main.scss */
-  #site-id .nav-button {
-    display: inline-block;
-    margin-right: 2em;
-  }
-  /* line 159, ../scss/main.scss */
-  #site-id img {
-    width: auto;
-    height: 100%;
   }
 }
 @media (orientation: landscape) {
-  /* line 138, ../scss/main.scss */
-  #site-id {
-    width: 8em;
+  /* line 30, ../scss/main2.scss */
+  #site-header {
+    width: 10vmin;
     height: 100%;
-    box-shadow: 0px 0.5em 1em rgba(0, 0, 0, 0.4);
-  }
-  /* line 170, ../scss/main.scss */
-  #site-id .nav-button {
-    margin-bottom: 2em;
-  }
-  /* line 174, ../scss/main.scss */
-  #site-id img {
-    width: 100%;
-    height: auto;
   }
 }
 
-/* line 181, ../scss/main.scss */
-#site-nav {
-  position: fixed;
-  z-index: 90;
+/* line 51, ../scss/main2.scss */
+#sh-logo, #sh-toggles li {
+  background: #999;
+  cursor: pointer;
+}
+
+/* line 56, ../scss/main2.scss */
+#sh-logo {
+  margin-bottom: 1.2vmin;
+}
+
+/* line 60, ../scss/main2.scss */
+#sh-toggles li {
+  margin-top: 1.2vmin;
+}
+
+/* line 65, ../scss/main2.scss */
+.nav-section {
+  z-index: 100;
   width: 100%;
   height: 100%;
-  background: #666;
-  padding: 2em;
+  background: #555;
   display: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media (orientation: portrait) {
+  /* line 65, ../scss/main2.scss */
+  .nav-section {
+    padding-top: 10vmin;
+  }
+}
+@media (orientation: landscape) {
+  /* line 65, ../scss/main2.scss */
+  .nav-section {
+    padding-left: 10vmin;
+  }
 }
 
-/* line 191, ../scss/main.scss */
-#site-nav.active {
+/* line 83, ../scss/main2.scss */
+.nav-section.active {
   display: block;
 }
 
-/*************************
-    Basic Margins
-*************************/
-/* line 199, ../scss/main.scss */
-#content-body, #sidebar, #site-footer, #content-header {
-  padding: 2em;
+/* line 87, ../scss/main2.scss */
+.nav-content {
+  padding: 2vmin;
+  overflow-x: none;
 }
-
-@media (orientation: portrait) {
-  /* line 203, ../scss/main.scss */
-  #site-nav, #main-wrap {
-    padding-top: 12em;
-  }
-}
-@media (orientation: landscape) {
-  /* line 203, ../scss/main.scss */
-  #site-nav, #main-wrap {
-    padding-left: 12em;
-  }
-}
-
-/*************************
-    Body / Sidebar
-*************************/
-@media (orientation: landscape) and (min-width: 900px), (orientation: portrait) and (min-width: 900px) {
-  /* line 223, ../scss/main.scss */
-  #content-wrap {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-box;
-    display: box;
-    -webkit-box-orient: horizontal;
-    -moz-box-orient: horizontal;
-    -ms-box-orient: horizontal;
-    box-orient: horizontal;
-  }
-
-  /* line 228, ../scss/main.scss */
-  #content-main {
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    -ms-box-flex: 1;
-    box-flex: 1;
-  }
-
-  /* line 232, ../scss/main.scss */
-  #sidebar {
-    -webkit-box-flex: 0;
-    -moz-box-flex: 0;
-    -ms-box-flex: 0;
-    box-flex: 0;
-  }
-}
-/*************************
-    Content-Header
-*************************/
-/* line 242, ../scss/main.scss */
-#content-header {
-  color: #fff;
-  background-color: #333;
-  min-height: 10em;
-  box-sizing: border-box;
-  position: relative;
-}
-/* line 249, ../scss/main.scss */
-#content-header h1 {
-  margin: 0px;
-  /* position:absolute;
-  left:em(vm($content-pad,$content-h1));
-  bottom:em(vm($content-pad,$content-h1)); */
-}
-
-/*************************
-    Stream
-*************************/
-/* line 261, ../scss/main.scss */
-.stream-item {
-  clear: both;
-  margin-bottom: 2em;
-}
-/* line 266, ../scss/main.scss */
-.stream-item .call2action {
-  float: right;
-}
-
-/*************************
-    Sidebar
-*************************/
-/* line 276, ../scss/main.scss */
-#sidebar {
-  background: #aaa;
-  clear: both;
-}
-
-/* line 281, ../scss/main.scss */
-.sb-module {
-  background: #ddd;
-  margin-bottom: 2em;
-}
-
-/* line 286, ../scss/main.scss */
-.sb-module.cam {
-  padding: 2em;
+/* line 93, ../scss/main2.scss */
+.nav-content ul li {
+  width: 33%;
+  display: inline-block;
+  padding-right: 2vmin;
+  margin-bottom: 2vmin;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-/* line 291, ../scss/main.scss */
-.sb-module.ad .sb-inner {
-  width: 300px;
-  height: 250px;
+/* line 100, ../scss/main2.scss */
+.nav-content ul li figure {
   background: #999;
-  margin: 0px auto 2em;
-}
-
-@media (orientation: landscape) and (min-width: 800px), (orientation: portrait) and (min-width: 800px) {
-  /* line 299, ../scss/main.scss */
-  .sb-module {
-    width: 300px;
-    box-sizing: content-box;
-  }
-}
-/*************************
-    Footer
-*************************/
-/* line 310, ../scss/main.scss */
-#site-footer {
-  color: #fff;
-  background-color: #333;
-  clear: both;
+  width: 35%;
+  float: left;
+  margin-right: 2vmin;
 }
